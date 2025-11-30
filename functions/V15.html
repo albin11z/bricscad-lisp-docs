@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>V.1.5</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="V.1.5">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="V.1.5" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="V15"
+		  data-hnd-context="1509"
+		  data-hnd-title="V.1.5"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Introduction.html">Introduction</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Introduction.html" title="Introduction" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="V16.html" title="V.1.6" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="V14.html" title="V.1.4" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>V.1.5</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts39">Additions &amp; Changes with BricsCAD V22 (stage V22.2.02)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">BLADE LISP IDE </span><span class="rvts25">: a number of issues, defects, glitches have been fixed, "Syntax &amp; Variables" dialog has been extended to analyse + report referenced Lisp files; Debugging is now much easier, loading referenced Lisp code is automatically managed now; debug step modes are fine-tuned &nbsp;(see below)</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Extended VLA functions (properties + methods) for Linux + Mac (also as "Fast-COM" under Windows)</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">AddObject</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">AddPViewPort</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">AddXrecord</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">AppendInnerLoop</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">AppendOuterLoop</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">AssociativeHatch</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">AttachmentPoint</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">BackgroundFill</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">CheckInterference</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">ColorIndex</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">ColorMethod</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">ConfigName</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">CustomScale</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">Description</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">DimensionLineColor</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">DimTxtDirection</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">Display</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">DisplayScrollBars</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">EntityColor</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">Explode</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">ExtensionLineColor</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">FontFile</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">Freeze</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">GetBlockTableRecordId</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">GetBlockTableRecordId32</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">GetBlockTableRecordId2</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">GetBlockTableRecordId232</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">GetCanonicalMediaNames</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">GetCellTextStyle</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">GetCellTextHeight</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">GetCustomScale</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">GetName</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">GetObject</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">GetPaperMargins</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">GetPaperSize</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">GetLoopAt</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">GetPlotDeviceNames</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">GetProjectFilePath</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">GetWindowToPlot</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">GetXData</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">InsertLoopAt</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">LastHeight</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">LayerOn</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">Lock</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">LockPosition</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">MTextAttribute</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">NumberOfLoops</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">ObliqueAngle</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">PaperUnits</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">Plottable</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">PolarPoint</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">RefreshPlotDeviceInfo</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">Remove</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">Rename</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">Replace</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">SetBlockTableRecordId</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">SetBlockTableRecordId32</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">SetBlockTableRecordId2</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">SetBlockTableRecordId232</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">SetCellTextHeight</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">SetCellTextStyle</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">SetCustomScale</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">SetProjectFilePath</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">SetWindowToPlot</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">StandardScale</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">StyleSheet</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">SetXData</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">TabOrder</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">Target</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">TextAlignmentPoint</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">TextBackgroundFill</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">TextPosition</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">TextColor</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">Used</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">UseStandardScale</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">ViewportDefault</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">ViewportOn</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">XScaleFactor</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">YScaleFactor</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">ZScaleFactor</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Extended BIM API functions for Material handling and </span><a class="rvts27" href="IFCImportExportFunctions.html">IFC file Import &amp; Export</a><span class="rvts26"> </span><span class="rvts25">(since V22.2)</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps9"><a class="rvts35" href="bimifc-exportfile.html">bim:ifc-exportfile</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps9"><a class="rvts35" href="bimifc-importfile.html">bim:ifc-importfile</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps9"><a class="rvts35" href="bimdlg-profiles.html">bim:dlg-profiles</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps9"><a class="rvts35" href="bimget-all-availablematerials1.html">bim:get-all-availablematerials</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps9"><a class="rvts35" href="bimget-all-usedmaterials1.html">bim:get-all-usedmaterials</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps9"><a class="rvts35" href="bimhas-material.html">bim:has-material</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps9"><a class="rvts35" href="bimget-material.html">bim:get-material</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps9"><a class="rvts35" href="bimsave-material.html">bim:save-material</a></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps9"><a class="rvts35" href="bimdelete-material.html">bim:delete-material</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Extended DOSLib implementations for Linux + Mac </span><span class="rvts25">(since V22.2)</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps9"><a class="rvts35" href="dos_deltree.html">dos_deltree</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">added </span><span class="rvts26">new </span><a class="rvts27" href="VLELISPFunctionLibrary.html">VLE functions</a><span class="rvts25"> :</span><br/><span class="rvts25"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps2"><a class="rvts35" href="vle-file-encoding.html">vle-file-encoding</a></p>
+  </td>
+  <td style="padding: 1px; width: 278px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25">&nbsp;</span></p>
+  </td>
+  <td style="padding: 1px; width: 305px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Improvements and Additions for BLADE</span><br/><span class="rvts25">the "Syntax &amp; Variables" dialog provides a nice improvement :</span><br/><span class="rvts25">for a selected file or DEFUN scope, a new list box shows all referenced Lisp files, which are necessary to run that selected file/defun;</span><br/><span class="rvts25">this allows to get a quick overview on mandatory Lisp file code which needs to be loaded along.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Furthermore, a double-click on such a file entry in the new list box opens a new "Syntax &amp; Variables" dialog instance, which then analyses that double-clicked Lisp file, and so forth.</span><br/><span class="rvts25"></span><br/><span class="rvts26">Debugging is now significantly faster :</span><br/><span class="rvts25">several improvements for the Debugger (memory management, data + code breakpoint handling) result in much better performance when Lisp code is processed under Debugger ... mainly for loop-based code, improvements are up to factor 5;</span><br/><span class="rvts25">DebugStep modes (SingleStep, StepOver) were fine-tuned and improved for a more consistent + predictable behaviour;</span><br/><span class="rvts25">CodeBreakPoints are no longer triggered multiple times for same line of code;</span><br/><span class="rvts25"></span><br/><span class="rvts25">Another important improvement :</span><br/><span class="rvts25">debugging pre-loaded Lisp files (loaded into BricsCAD outside BLADE &amp; Debugger) is now possible;</span><br/><span class="rvts25">BLADE Debugger will automatically recognise - from StepInto debug step mode, from active Code-, Data-, SystemVariables-BreakPoints - when there is a Halt operation on such pre-loaded Lisp code, and will automatically + dynamically load that Lisp file code under Debugger, preserving all global variables from being overwritten, and not executing any load-time Lisp code (as the Lisp file was already loaded, to preserve application logic).</span><br/><span class="rvts25">That way, Debugging Lisp code is as simple as never before, virtually fool-proof :-)</span><br/><span class="rvts25"></span><br/><span class="rvts25">And finally, a number of visual glitches have been fixed</span></li>
+</ul>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

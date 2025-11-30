@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>LISP Benchmark</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Benchmark,LISP Benchmark">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LISP Benchmark">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="LISP Benchmark" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="LISPBenchmark"
+		  data-hnd-context="11"
+		  data-hnd-title="LISP Benchmark"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="OptimisedCodePatterns.html" title="Optimised Code Patterns" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="PlannedfortheFuture3.html" title="Planned for the Future" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>LISP Benchmark</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">LISP Benchmarking Utility</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Initially developed for private use, the Lisp Benchmark has grown over time to become an assisting tool even for developing the BricsCAD LISP engine. The Lisp Benchmark is still under development, and all major work, new functionality and improved Lisp engine implementations are covered by the benchmark system.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">This </span><span class="rvts26">Lisp Developer Support Package</span><span class="rvts25"> now includes the Lisp Benchmark for all Lisp developers.</span><br/><span class="rvts25">New, extended and improved versions of this Lisp Benchmark will be provided with updated packages in the future.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts74">We provide </span><span class="rvts75">LISP Benchmarking Utility</span><span class="rvts74"> as FreeWare,</span><br/><span class="rvts74">as long as all copyright notes remain unchanged throughout all its files</span><span class="rvts68">.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts32">Installation</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Installation is very simple :</span><br/><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps13 noindent"><span class="rvts26">unzip and copy the folder "LispBenchmark"</span><span class="rvts25"> to any disk location of your choice (write-access needed !)</span></li>
+  <li class="rvps13 noindent"><span class="rvts26">add a "Support Path" for "LispBenchmark" folder</span><span class="rvts25"> to CAD system's Search/Support Path configuration</span></li>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts32">Benchmark Concepts and Features</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">The Lisp Benchmark is designed to run on any LISP enabled CAD system, providing an AutoLISP compatible language and environment, on Windows. Linux and Macintosh platforms. It contains </span><span class="rvts26">more than 360 individual benchmarks</span><span class="rvts25">, grouped in </span><span class="rvts26">8 categories</span><span class="rvts25">, covering the following areas :</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">Standard AutoLISP functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">standard functions A...Z as defined by AutoCAD R12</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">VisualLISP functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">(vl-xxx) functions provided by VisualLISP since AutoCAD 2000</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">COM utility functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">(vlax-xxx) functions</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">COM interface functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">(vla-xxx), (vla-get-xxx) and (vla-put-xxx) functions</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">VisualLISP Extension functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">verifying BricsCAD's (vle-xxx) functions - emulated on other systems</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">Fast-COM utility + interface functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">verifying BricsCAD's "Fast-COM" mode - emulated on other systems</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">LISP-Optimiser verification benchmarks</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">verifying BricsCAD's "Lisp-Optimiser" - emulated on other systems</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 415px;">
+   <p class="rvps13"><span class="rvts26">User-defined (complex) benchmarks</span></p>
+  </td>
+  <td style="padding: 1px; width: 720px;">
+   <p class="rvps2"><span class="rvts25">complex scenarios based on user feedback &amp; demand</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Each individual benchmark file examines a particular, single LISP function in typical usage (different arguments etc.); this verifies the low-level, implementation-specific performance of the target function.</span><br/><span class="rvts25"></span><br/><span class="rvts25">For all categories a specific command is provided to run all the benchmarks of that category; these commands also create a CAD-System + Platform + Command specific log file to store benchmarking results.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Besides predefined benchmark commands, each individual benchmark Lisp file defines a </span><span class="rvts26">C:Run</span><span class="rvts25"> command to run separately - the easiest way to benchmark the particular function.</span><br/><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts32">Running Benchmarks</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">There are 2 possible ways to run the benchmark(s) :</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps2 noindent"><span class="rvts26">using main "Bench.lsp" Lisp file</span><span class="rvts25"> - simply load that Lisp file (Drag &amp; Drop, APPLOAD etc.), a number of commands are reported in commandline :</span><br/><span class="rvts25"><br/></span></li>
+</ol>
+<div class="rvps13">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 146px;">
+   <p class="rvps2"><span class="rvts26">BENCH</span><br/><span class="rvts26">BENCHS</span><br/><span class="rvts26">BENCHSV</span><br/><span class="rvts26">BENCHV</span><br/><span class="rvts26">BENCHVL</span><br/><span class="rvts26">BENCHVLA</span><br/><span class="rvts26">BENCHVLAX</span><br/><span class="rvts26">BENCHVLAF</span><br/><span class="rvts26">BENCHVLE</span><br/><span class="rvts26">BENCHOPT</span><br/><span class="rvts26">BENCHUSER</span></p>
+  </td>
+  <td style="padding: 1px; width: 394px;">
+   <p class="rvps2"><span class="rvts25">all functions</span><br/><span class="rvts25">ST</span><br/><span class="rvts25">ST + VL</span><br/><span class="rvts25">VL + VLA + VLAX</span><br/><span class="rvts25">VL</span><br/><span class="rvts25">VLA</span><br/><span class="rvts25">VLAX</span><br/><span class="rvts25">VLA (Fast COM)</span><br/><span class="rvts25">VLE Lisp</span><br/><span class="rvts25">Optimizer</span><br/><span class="rvts25">User &amp; Application Benchmarks</span></p>
+  </td>
+  <td style="padding: 1px; width: 566px;">
+   <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Benchmark-Commands.jpg"></p>
+  </td>
+ </tr>
+</table>
+<br/><span class="rvts25"><br/></span></div>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="2" class="rvps2 noindent"><span class="rvts26">using individual benchmark Lisp files</span><span class="rvts25"> - located in sub-folder </span><span class="rvts26">./Benches</span><span class="rvts25">, there are benchmark Lisp files sorted by category; each benchmark file tests 1 dedicated Lisp API function;</span><br/><span class="rvts25">-&gt; simply drag &amp; drop the desired benchmark file into the CAD system, or use APPLOAD or use (load "xxx.lsp")</span><br/><span class="rvts25">-&gt; each benchmark Lisp file contains a C:RUN command, enter </span><span class="rvts26">RUN</span><span class="rvts25"> to start</span></li>
+</ol>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts73">Note :</span></p>
+<p class="rvps2"><span class="rvts25">all the category-specific commands defined by Bench.lsp also save a log file for the benchmark, located under "./BenchLogs" folder; the log filename also contains the platform and benchmark command, which allows to keep and compare all the benchmark results.</span><br/><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,1466 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Type Constants</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Type Constants">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Type Constants" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TypeConstants1"
+		  data-hnd-context="1860"
+		  data-hnd-title="Type Constants"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="BricsCADCivil3DLISPAPI.html">BricsCAD Civil3D LISP API</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BricsCADCivil3DLISPAPI.html" title="BricsCAD Civil3D LISP API" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="vl-load-civil.html" title="vl-load-civil" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Civil3DPointConversionFunctions.html" title="Civil3D Point Conversion Functions" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Type Constants</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">Civil3d Type Constants</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">There are a number of predefined symbolic Lisp constants; in most cases, these symbolic constants can be combined like</span><br/><span class="rvts25">(+ bcTinCivil3dSurfaceLabels bcTinCivil3dAlignmentsLabels)</span><br/><span class="rvts25"></span><br/><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 5px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">Variable/Symbol Name</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">Integer</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts26">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivilLabelImportFlags</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dNoLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">no labels to be imported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dSurfaceLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">surface labels to be imported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dAlignmentsLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment labels to be imported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dUnattachedLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">unattached labels to be imported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts25">some preset combinations :</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dDefaultLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">6</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">bcTinCivil3dSurfaceLabels + bcTinCivil3dUnattachedLabels</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcTinCivil3dAllLabels</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">255</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">all labels shall be imported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dEntityType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dTypeNoEntity</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">-1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">the entity is not of any C3D type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dTypeAlignment</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">the entity is a C3D Alignment entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dTypeProfile</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">the entity is a C3D Profile entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dTypeTinSurface</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">the entity is a C3D TinSurface entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dTypeProfileView</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">the entity is a C3D ProfileView entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dAlignmentType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dNotAlignment</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">-1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">not of any Alignment type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dCenterline</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment is CenterLine</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dOffset</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment is Offset</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dCurbReturn</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment is CurbReturn</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dRail</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment is Rail</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dMiscellaneous</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">alignment is Miscellaneous</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dProfileType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dNotProfile</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">-1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">not of any Profile type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dLayout</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">profile is Layout</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dStaticSurface</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">profile is StaticSurface</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dDynamicSurface</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">profile is DynamicSurface</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcC3dQuick</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">profile is Quick</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dStylesFlags</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilGeneralStyles</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">General styles (GeneralLabelLine, GeneralLabelCurve)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPointStyles</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Point styles (PointSymbol, PointLabel)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSurfaceStyles</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Surface styles (SurfaceContour, SurfaceElevation, SurfaceSlope)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSymbolStyles</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">8</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Symbol styles (Symbol)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dLabelStyleCategory</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPointLabel</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Point Label Style</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSurfaceContourLabel</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Surface Contour Label Style</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSurfaceElevation</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Surface Elevation Label Style</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSurfaceSlope</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Surface Slope Label Style</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilAlignmentStation</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Alignment Station Label Style</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dSymbolType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSymbolTypeACADPoint</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Civil Point uses standard Point styles (PDMODE)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSymbolTypeCustom</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Civil Point uses combined standard modes (see ECivil3dCustomSymbolType)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSymbolTypeBlock</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Civil Point uses a BlockReference as Point symbol</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilSymbolTypeVerticalLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Civil Point uses a vertical line for representation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dCustomSymbolType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolSpotPoint</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">spot mode : a simple Point</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolSpotEmpty</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">spot mode : none</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolSpotCross</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">spot mode : cross</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolSpotCross45</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">spot mode : cross rotated 45 degrees</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolSpotVerticalLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">spot mode : a vertical line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolFrameCircle</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">32</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">toggles an extra circle as frame on/off</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilCustomSymbolFrameSquare</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">64</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">toggles an extra rectangle as frame on/off</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dEScalingType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilScalingTypeDrawingScale</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">scaling based on drawing scale</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilScalingTypeFixedScale</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">scaling with a fixed scale</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilScalingTypeAbsoluteUnits</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">scaling with absolute units</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilScalingTypeRelativeToScreen</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">scaling relative to screen</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dOrientationRef</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilOrientationReferenceObject</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">orientation references a drawing entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilOrientationReferenceView</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">orientation with the drawing view</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilOrientationReferenceWCS</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">orientation with the WCS</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilOrientationReferenceStartLeaderAtMarker</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">9</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">orientation related to the start point of the Leader entity</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dForcedInsertion</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilForcedInsertionNone</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">overrides insertion point : none</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilForcedInsertionTop</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">overrides insertion point : at top</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilForcedInsertionBottom</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">overrides insertion point : at bottom</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dLeaderType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderTypeStraight</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader uses line segments</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderTypeSpline</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader uses a spline</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dLeaderAttachment</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderAttachmentTopOfTopLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader is attached at the top of the first text line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderAttachmentMiddleOfTopLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader is attached at in the mid of the top text line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderAttachmentMiddle</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader is attached at the mid</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderAttachmentMiddleOfBottomLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader is attached at the mid of the last text line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilLeaderAttachmentBottomOfBottomLine</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">Leader is attached at the bottom of the last text line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dDisplayMode</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilDisplayModeAsComposed</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilDisplayModeStackedText</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">text appears as stacked</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">ECivil3dBorderType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilBorderTypeRectangular</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">places a rectangle as border</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilBorderTypeRoundedRectangular</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">places a rounded rectangle as border</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilBorderTypeCircular</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">places a circle as border</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25">PlotStyleNameType</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPlotStyleNameByLayer</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">PlotStyle ByLayer</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPlotStyleNameByBlock</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">PlotStyle ByBlock</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPlotStyleNameIsDictDefault</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">PlotStyle uses current drawing default</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 230px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 303px;">
+   <p class="rvps2"><span class="rvts26">bcCivilPlotStyleNameById</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 91px;">
+   <p class="rvps3"><span class="rvts26">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 544px;">
+   <p class="rvps2"><span class="rvts25">PlotStyle specified by Ename/ObjectId</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts26"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

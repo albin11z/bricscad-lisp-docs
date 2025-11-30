@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>LISP &quot;Fast-COM&quot;</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Fast-COM,Linux">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LISP &quot;Fast-COM&quot;">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="LISP &quot;Fast-COM&quot;" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="LISPFastCOM"
+		  data-hnd-context="2"
+		  data-hnd-title="LISP &quot;Fast-COM&quot;"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="dos_guidgen.html" title="dos_guidgen" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EnableDisableFastCOM.html" title="Enable + Disable &quot;Fast-COM&quot;" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>LISP &quot;Fast-COM&quot;</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">"Fast-COM" Implementation Technology</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">When BricsCAD was ported to Linux, we were faced with the problem to provide the COM-based LISP functions (the </span><span class="rvts26">vla</span><span class="rvts25">, </span><span class="rvts26">vlax</span><span class="rvts25">, </span><span class="rvts26">vlr</span><span class="rvts25"> function sets) under Linux as well - as there is no COM available with Linux (and same for Mac platform as well).</span><br/><span class="rvts25"></span><br/><span class="rvts25">The implementation of "Fast-COM" mode is based on an internal descriptor table, which describes the BricsCAD-built-in objects and entities with their properties and methods, very similar to Microsoft COM TypeLibraries (.tlb and .idl files).</span><br/><span class="rvts25"></span><br/><span class="rvts25">Property functions can be called in usual way - as dedicated functions </span><span class="rvts26">(vla-get-&lt;property&gt; ...)</span><span class="rvts25"> or using generic </span><span class="rvts26">(vlax-get-property '&lt;property&gt; ...)</span><span class="rvts25">, the "Fast-COM" mode covers both.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Method functions can be called in usual way - as dedicated functions </span><span class="rvts26">(vla-&lt;method&gt; ...)</span><span class="rvts25"> or using generic </span><span class="rvts26">(vlax-invoke-method '&lt;method&gt; ...)</span><span class="rvts25">, the "Fast-COM" mode covers both.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Primarily intended to provide the </span><span class="rvts26">vla</span><span class="rvts25">, </span><span class="rvts26">vlax</span><span class="rvts25">, </span><span class="rvts26">vlr</span><span class="rvts25"> function sets for BricsCAD Linux/Mac, the "Fast-COM" mode has also been enabled under Windows, providing significant performance improvements over standard Windows COM - usually by 50% up to 1000% (factor 10) and more, and also reduces memory load for both Windows and Lisp engine memory.</span><br/><span class="rvts25">Reduced Lisp memory load causes indirect performance improvements, by less GarbageCollections.</span><br/><span class="rvts25"></span><br/><span class="rvts71">Some implementation background :</span><br/><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps13 noindent"><span class="rvts25">bypasses most Windows COM data wrapping and marshalling, which are costly in performance and memory consumption; instead, "Fast-COM" uses plain data types as directly as possible</span></li>
+  <li class="rvps13 noindent"><span class="rvts25">bypasses Windows COM function call mechanism (::DispInvoke(), IDispatch::Invoke() etc.), which is relatively slow, as target functions and arguments are verified against TypeLibrary descriptions</span></li>
+  <li class="rvps13 noindent"><span class="rvts25">both data type wrapping / marshalling and dynamic COM function call resolution are processed forward and backward; both does not apply for the "Fast-COM" mode</span></li>
+  <li class="rvps13 noindent"><span class="rvts25">as the Lisp engine additionally uses effective caching of COM object description, and directly works on C/C++ level with Teigha (TX) and BricsCAD's (internal) interfaces, the performance is very close to ARX/BRX code (around 80%...90%)</span><br/><span class="rvts25"><br/></span></li>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts25">Implementing the "Fast-COM" mode is ongoing work - with each BricsCAD version, more properties and methods will support this mode, and will get available for BricsCAD Linux then as well.</span><br/><span class="rvts25">Just for interest, </span><a class="rvts67" href="ImplementationScheme.html">here is a </a><a class="rvts27" href="ImplementationScheme.html">principle scheme about "Fast-COM" implementation</a><span class="rvts25"> mechanism and code + data flow.</span><br/><span class="rvts25"></span><br/><span class="rvts25">This "Fast-COM" implementation can be activates and deactivated at runtime by Lisp code - for details please see </span><a class="rvts27" href="EnableDisableFastCOM.html">Enable + Disable "Fast-COM</a><span class="rvts25">.</span><br/><span class="rvts25"></span><br/><span class="rvts25">The summaries below lists all properties and methods, which currently support "Fast-COM" mode; therefore, they are already available on Linux/Mac platforms.</span><br/><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps13 noindent"><a class="rvts27" href="PropertiessupportingFast-COM.html">COM Object Properties, already implemented in "Fast-COM" mode</a><br/><span class="rvts26"><br/></span></li>
+  <li class="rvps13 noindent"><a class="rvts27" href="MethodssupportingFastCOM.html">COM Object Methods, already implemented in "Fast-COM" mode</a></li>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

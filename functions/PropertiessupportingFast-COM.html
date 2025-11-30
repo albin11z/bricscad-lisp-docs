@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Properties supporting Fast-COM</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Object Properties providing &quot;Fast-COM&quot;support">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Properties supporting Fast-COM">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Properties supporting Fast-COM" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PropertiessupportingFast-COM"
+		  data-hnd-context="283"
+		  data-hnd-title="Properties supporting Fast-COM"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="LISPFastCOM.html">LISP &quot;Fast-COM&quot;</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="LISPFastCOM.html" title="LISP &quot;Fast-COM&quot;" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="EnableDisableFastCOM.html" title="Enable + Disable &quot;Fast-COM&quot;" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="MethodssupportingFastCOM.html" title="Methods supporting Fast-COM" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Properties supporting Fast-COM</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">Object Properties providing "Fast-COM" support</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">The Properties listed below are already implemented in Fast-COM mode (and are therefore available on Linux / Mac platforms as well);</span><br/><span class="rvts25">all Properties not listed are managed by normal Windows COM (and are therefore not yet available on Linux / Mac platforms);</span><br/><span class="rvts25">this is ongoing work, so more Properties will become available and listed here.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Property functions can be called in usual way - as dedicated functions </span><span class="rvts26">(vla-get-&lt;property&gt; ...)</span><span class="rvts25"> + </span><span class="rvts26">(vla-put-&lt;property&gt; ...)</span><span class="rvts25"> or using the generic </span><span class="rvts26">(vlax-get-property '&lt;property&gt; ...)</span><span class="rvts25"> + </span><span class="rvts26">(vlax-put-property '&lt;property&gt; ...)</span><span class="rvts25">; &nbsp;the "Fast-COM" mode covers both.</span><br/><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 22px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 209px;">
+   <p class="rvps2"><span class="rvts25">Active</span><br/><span class="rvts25">ActiveDimStyle</span><br/><span class="rvts25">ActiveDocument</span><br/><span class="rvts25">ActiveLayer</span><br/><span class="rvts25">ActiveLayout</span><br/><span class="rvts25">ActiveLinetype</span><br/><span class="rvts25">ActiveMaterial</span><br/><span class="rvts25">ActiveProfile</span><br/><span class="rvts25">ActivePViewport</span><br/><span class="rvts25">ActiveSelectionSet</span><br/><span class="rvts25">ActiveSpace</span><br/><span class="rvts25">ActiveTextstyle</span><br/><span class="rvts25">ActiveUcs</span><br/><span class="rvts25">ActiveViewport</span><br/><span class="rvts25">Alignment</span><br/><span class="rvts25">Angle</span><br/><span class="rvts25">Annotation</span><br/><span class="rvts25">Application</span><br/><span class="rvts25">ArcLength</span><br/><span class="rvts25">Area</span><br/><span class="rvts25">ArrowHeadBlock</span><br/><span class="rvts25">ArrowHead1Block</span><br/><span class="rvts25">ArrowHead2Block</span><br/><span class="rvts25">ArrowHeadType</span><br/><span class="rvts25">ArrowHead1Type</span><br/><span class="rvts25">ArrowHead2Type</span><br/><span class="rvts25">ArrowHeadSize</span><br/><span class="rvts25">AssociativeHatch</span><br/><span class="rvts25">AttachmentPoint</span><br/><span class="rvts25">Author</span><br/><span class="rvts25">AutoAudit</span><br/><span class="rvts25">AutoSaveInterval</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 170px;">
+   <p class="rvps2"><span class="rvts25">BackgroundColor</span><br/><span class="rvts25">BackgroundFill</span><br/><span class="rvts25">BasePoint</span><br/><span class="rvts25">Block</span><br/><span class="rvts25">Blocks</span><br/><span class="rvts25">BlockScaling</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts25">CanonicalMediaName</span><br/><span class="rvts25">Caption</span><br/><span class="rvts25">Center</span><br/><span class="rvts25">Centroid</span><br/><span class="rvts25">Circumference</span><br/><span class="rvts25">ClippingEnabled</span><br/><span class="rvts25">Closed</span><br/><span class="rvts25">Color</span><br/><span class="rvts25">ColorIndex</span><br/><span class="rvts25">ColorMethod</span><br/><span class="rvts25">Columns</span><br/><span class="rvts25">ColumnWidth</span><br/><span class="rvts25">Comments</span><br/><span class="rvts25">ConfigName</span><br/><span class="rvts25">Constant</span><br/><span class="rvts25">ConstantWidth</span><br/><span class="rvts25">ControlPoints</span><br/><span class="rvts25">Coordinate</span><br/><span class="rvts25">Coordinates</span><br/><span class="rvts25">Count</span><br/><span class="rvts25">CreateBackup</span><br/><span class="rvts25">CustomScale</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 200px;">
+   <p class="rvps2"><span class="rvts25">Database</span><br/><span class="rvts25">Degree</span><br/><span class="rvts25">Delta</span><br/><span class="rvts25">DemandLoadARXApp</span><br/><span class="rvts25">Description</span><br/><span class="rvts25">Diameter</span><br/><span class="rvts25">Dictionaries</span><br/><span class="rvts25">DimensionLineColor</span><br/><span class="rvts25">Dimstyles</span><br/><span class="rvts25">DimTxtDirection</span><br/><span class="rvts25">DirectionVector</span><br/><span class="rvts25">Display</span><br/><span class="rvts25">DisplayGrips</span><br/><span class="rvts25">DisplayGripsWithinBlocks</span><br/><span class="rvts25">DisplayLocked</span><br/><span class="rvts25">DisplayScrollBars</span><br/><span class="rvts25">Document</span><br/><span class="rvts25">Documents</span><br/><span class="rvts25">Drafting</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 163px;">
+   <p class="rvps2"><span class="rvts25">EffectiveName</span><br/><span class="rvts25">Elevation</span><br/><span class="rvts25">ElevationModelspace</span><br/><span class="rvts25">ElevationPaperspace</span><br/><span class="rvts25">EndAngle</span><br/><span class="rvts25">EndPoint</span><br/><span class="rvts25">EntityColor</span><br/><span class="rvts25">EntityName</span><br/><span class="rvts25">Explodable</span><br/><span class="rvts25">ExtensionLineColor</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts25">FileDependencies</span><br/><span class="rvts25">Files</span><br/><span class="rvts25">FitPoints</span><br/><span class="rvts25">FontFile</span><br/><span class="rvts25">Freeze</span><br/><span class="rvts25">FullCRCValidation</span><br/><span class="rvts25">FullName</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 22px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 209px;">
+   <p class="rvps2"><span class="rvts25">GetBlockTableRecordId</span><br/><span class="rvts25">GetBlockTableRecordId32</span><br/><span class="rvts25">GetBlockTableRecordId2</span><br/><span class="rvts25">GetBlockTableRecordId232</span><br/><span class="rvts25">GetExtensionDictionary</span><br/><span class="rvts25">Groups</span><br/><span class="rvts25">GraphicsWinLayoutBackgrndColor</span><br/><span class="rvts25">GraphicsWinModelBackgrndColor</span><br/><span class="rvts25">GripSize</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 170px;">
+   <p class="rvps2"><span class="rvts25">Handle</span><br/><span class="rvts25">HasExtensionDictionary</span><br/><span class="rvts25">HasAttributes</span><br/><span class="rvts25">HeaderSuppressed</span><br/><span class="rvts25">Height</span><br/><span class="rvts25">HWnd</span><br/><span class="rvts25">HyperLinkBase</span><br/><span class="rvts25">HyperLinks</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts25">IncrementalSavePercent</span><br/><span class="rvts25">InsertionPoint</span><br/><span class="rvts25">Invisible</span><br/><span class="rvts25">IsDynamicBlock</span><br/><span class="rvts25">IsLayout</span><br/><span class="rvts25">IsPlanar</span><br/><span class="rvts25">IsRational</span><br/><span class="rvts25">IsPeriodic</span><br/><span class="rvts25">IsXref</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">Keywords</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 200px;">
+   <p class="rvps2"><span class="rvts25">LastSavedBy</span><br/><span class="rvts25">LastHeight</span><br/><span class="rvts25">Layer</span><br/><span class="rvts25">LayerOn</span><br/><span class="rvts25">Layers</span><br/><span class="rvts25">Layout</span><br/><span class="rvts25">Layouts</span><br/><span class="rvts25">LayoutCreateViewport</span><br/><span class="rvts25">Length</span><br/><span class="rvts25">Limits</span><br/><span class="rvts25">Linetype</span><br/><span class="rvts25">LinetypeGeneration</span><br/><span class="rvts25">Linetypes</span><br/><span class="rvts25">LinetypeScale</span><br/><span class="rvts25">LineWeight</span><br/><span class="rvts25">LogFileOn</span><br/><span class="rvts25">Lock</span><br/><span class="rvts25">LockPosition</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 163px;">
+   <p class="rvps2"><span class="rvts25">MajorAxis</span><br/><span class="rvts25">MajorRadius</span><br/><span class="rvts25">Material</span><br/><span class="rvts25">Materials</span><br/><span class="rvts25">Menus</span><br/><span class="rvts25">MenuBar</span><br/><span class="rvts25">MenuGroups</span><br/><span class="rvts25">MinorAxis</span><br/><span class="rvts25">MinorRadius</span><br/><span class="rvts25">Modelspace</span><br/><span class="rvts25">ModelType</span><br/><span class="rvts25">Mspace</span><br/><span class="rvts25">MTextAttribute</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts25">Name</span><br/><span class="rvts25">Normal</span><br/><span class="rvts25">NumberOfControlPoints</span><br/><span class="rvts25">NumberOfFitPoints</span><br/><span class="rvts25">NumberOfLoops</span><br/><span class="rvts25">NumTransactions</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 22px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 209px;">
+   <p class="rvps2"><span class="rvts25">ObliqueAngle</span><br/><span class="rvts25">ObjectName</span><br/><span class="rvts25">ObjectSnapMode</span><br/><span class="rvts25">OpenSave</span><br/><span class="rvts25">Origin</span><br/><span class="rvts25">Output</span><br/><span class="rvts25">OwnerId</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 170px;">
+   <p class="rvps2"><span class="rvts25">PaperUnits</span><br/><span class="rvts25">Path</span><br/><span class="rvts25">PatternType</span><br/><span class="rvts25">PatternName</span><br/><span class="rvts25">PatternAngle</span><br/><span class="rvts25">PatternScale</span><br/><span class="rvts25">PatternSpace</span><br/><span class="rvts25">PatternDouble</span><br/><span class="rvts25">Pdf</span><br/><span class="rvts25">PickBoxSize</span><br/><span class="rvts25">PickFirstSelectionSet</span><br/><span class="rvts25">PickGroup</span><br/><span class="rvts25">PickFirst</span><br/><span class="rvts25">PickAdd</span><br/><span class="rvts25">PickDrag</span><br/><span class="rvts25">PickAuto</span><br/><span class="rvts25">PlotConfigurations</span><br/><span class="rvts25">PlotstyleName</span><br/><span class="rvts25">Plottable</span><br/><span class="rvts25">Position</span><br/><span class="rvts25">Preferences</span><br/><span class="rvts25">Preset</span><br/><span class="rvts25">Profiles</span><br/><span class="rvts25">PromptString</span><br/><span class="rvts25">PropertyName</span><br/><span class="rvts25">ProxyImage</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts25">QNewTemplateFile</span><br/><span class="rvts25"></span><br/><span class="rvts25">Radius</span><br/><span class="rvts25">RadiusRatio</span><br/><span class="rvts25">ReadOnly</span><br/><span class="rvts25">RegenerateTableSuppressed</span><br/><span class="rvts25">RegisteredApplications</span><br/><span class="rvts25">RevisionNumber</span><br/><span class="rvts25">Rotation</span><br/><span class="rvts25">Rows</span><br/><span class="rvts25">RowHeight</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 200px;">
+   <p class="rvps2"><span class="rvts25">SaveAsType</span><br/><span class="rvts25">Saved</span><br/><span class="rvts25">SavePreviewThumbnail</span><br/><span class="rvts25">ScaleFactor</span><br/><span class="rvts25">SecondPoint</span><br/><span class="rvts25">Selection</span><br/><span class="rvts25">SectionManager</span><br/><span class="rvts25">SelectionSets</span><br/><span class="rvts25">SetBlockTableRecordId</span><br/><span class="rvts25">SetBlockTableRecordId32</span><br/><span class="rvts25">SetBlockTableRecordId2</span><br/><span class="rvts25">SetBlockTableRecordId232</span><br/><span class="rvts25">ShadePlot</span><br/><span class="rvts25">ShowPlotStyles</span><br/><span class="rvts25">ShowProxyDialogBox</span><br/><span class="rvts25">StandardScale</span><br/><span class="rvts25">StartAngle</span><br/><span class="rvts25">StartPoint</span><br/><span class="rvts25">StyleSheet</span><br/><span class="rvts25">Subject</span><br/><span class="rvts25">SummaryInfo</span><br/><span class="rvts25">SupportPath</span><br/><span class="rvts25">System</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 163px;">
+   <p class="rvps2"><span class="rvts25">TabOrder</span><br/><span class="rvts25">Target</span><br/><span class="rvts25">TagString</span><br/><span class="rvts25">TemplateDwgPath</span><br/><span class="rvts25">TextAlignmentPoint</span><br/><span class="rvts25">TextBackgroundFill</span><br/><span class="rvts25">TextColor</span><br/><span class="rvts25">TextFill</span><br/><span class="rvts25">TextFillColor</span><br/><span class="rvts25">TextOverride</span><br/><span class="rvts25">TextPosition</span><br/><span class="rvts25">TextString</span><br/><span class="rvts25">Textstyle</span><br/><span class="rvts25">Textstyles</span><br/><span class="rvts25">Thickness</span><br/><span class="rvts25">Title</span><br/><span class="rvts25">TitleSuppressed</span><br/><span class="rvts25">Toolbars</span><br/><span class="rvts25">TotalAngle</span><br/><span class="rvts25">TrueColor</span><br/><span class="rvts25">Type</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts25">Units</span><br/><span class="rvts25">Url</span><br/><span class="rvts25">UrlDescription</span><br/><span class="rvts25">UrlNamedLocation</span><br/><span class="rvts25">Used</span><br/><span class="rvts25">User</span><br/><span class="rvts25">UserCoordinateSystems</span><br/><span class="rvts25">Utility</span><br/><span class="rvts25">UseStandardScale</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 22px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 209px;">
+   <p class="rvps2"><span class="rvts25">Value</span><br/><span class="rvts25">ViewportDefault</span><br/><span class="rvts25">ViewportOn</span><br/><span class="rvts25">Viewports</span><br/><span class="rvts25">Views</span><br/><span class="rvts25">Visible</span><br/><span class="rvts25">VisualStyle</span><br/><span class="rvts25">Volume</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 170px;">
+   <p class="rvps2"><span class="rvts25">Width</span><br/><span class="rvts25">WindowTitle</span><br/><span class="rvts25">WindowState</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts25">XEffectiveScaleFactor</span><br/><span class="rvts25">XrefDatabase</span><br/><span class="rvts25">XrefDemandLoad</span><br/><span class="rvts25">XScaleFactor</span><br/><span class="rvts25">XVector</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 200px;">
+   <p class="rvps2"><span class="rvts25">YEffectiveScaleFactor</span><br/><span class="rvts25">YScaleFactor</span><br/><span class="rvts25">YVector</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 163px;">
+   <p class="rvps2"><span class="rvts25">ZEffectiveScaleFactor</span><br/><span class="rvts25">ZScaleFactor</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

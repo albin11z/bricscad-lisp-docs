@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>How it works</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Lisp Optimiser : How it works">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How it works">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="How it works" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Howitworks"
+		  data-hnd-context="301"
+		  data-hnd-title="How it works"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="LISPOptimiser.html">LISP Optimiser</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="LISPOptimiser.html" title="LISP Optimiser" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="LISPOptimiser.html" title="LISP Optimiser" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OptimisedCodePatterns.html" title="Optimised Code Patterns" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>How it works</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">Lisp Optimiser : How it works</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts26">The Lisp Optimiser operates on (defun ...) code blocks within Lisp files only</span><span class="rvts25">;</span><br/><span class="rvts25">any Lisp expression entered via commandline or outside (defun ...) blocks is not analysed.</span><br/><span class="rvts25"></span><br/><span class="rvts25">By default, the Lisp Optimiser is active for each Lisp file being loaded by the (load ...) statement.</span><br/><span class="rvts25"></span><br/><span class="rvts25">It is possible to disable the Optimiser by </span><a class="rvts35" href="vleoptimizer.html">(vle-optimiser nil)</a><span class="rvts25">, which is immediately effective, and suppresses code optimisations, until enabled again; the control statements can appear at any place in a Lisp file, to support troubleshooting, if necessary.</span><br/><span class="rvts25">At the end of the file being loaded, the Lisp Optimiser is automatically reset to enabled status again.</span><br/><span class="rvts25"></span><br/><span class="rvts25">If a Lisp file loads another Lisp file by (load ...), the Lisp optimiser is automatically (re-)activated for the sub-loaded Lisp file;</span><br/><span class="rvts25">if loading that file is finished, the Lisp Optimiser returns to the original status of the main Lisp file - in other words, for each Lisp file the Optimiser maintains its own status</span><br/><span class="rvts25"></span><br/><span class="rvts25">Once the loading of a Lisp file is finished and processed by the Optimiser, the Lisp code remains untouched in memory, no further operations will happen on it - this means, the Lisp Optimiser is only active at Lisp load-time, not at Lisp run time.</span><br/><span class="rvts25"></span><br/><span class="rvts25">(for other CAD systems, the (vle-optimiser t/nil) function is a No-Operation, provided by vle-extension.lsp file)</span><br/><span class="rvts25"></span><br/><span class="rvts26">When loading a Lisp file with enabled Lisp Optimiser :</span><br/><span class="rvts25"></span><br/><span class="rvts25">For each (defun ...) block being loaded from file, the Lisp Optimiser intercepts the evaluation of the defun block, and parses the Lisp code for known inefficient patterns - if such code patterns are found, they are replaced with more efficient ones, either "native" Lisp or VLE function expressions. The main goal is to increase performance combined with reduced memory load; performance improvements on cost of memory load is not an option here.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Of course, this load-time analysis costs a bit performance and a slightly slower loading of a Lisp file - in average, the loading time increases by around than 5% or less.</span><br/><span class="rvts25"></span><br/><span class="rvts25">The Bricsys automatic test system contains dedicated tests to monitor and verify the correct behaviour of the Lisp Optimiser - each optimisation case is covered by several tests.</span><br/><span class="rvts25"></span><br/><span class="rvts25">For the code patterns currently processed see </span><a class="rvts35" href="OptimisedCodePatterns.html">Optimised Code Patterns</a><span class="rvts25">.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Our </span><a class="rvts35" href="LISPBenchmark.html">Lisp Benchmark</a><span class="rvts25"> also contains dedicated benchmarks to verify the effects of load-time code optimisations.</span><br/><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

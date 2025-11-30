@@ -1,0 +1,629 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Vl Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Vl Functions">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vl Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Vl Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="VlFunctions"
+		  data-hnd-context="735"
+		  data-hnd-title="Vl Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AutoLISPCStandardFunctions.html">AutoLISP&copy; Standard Functions</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AutoLISPCStandardFunctions.html" title="AutoLISP&copy; Standard Functions" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="vports.html" title="vports" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="vl-acad-defun.html" title="vl-acad-defun" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Vl Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">Vl Functions</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">This chapter covers the standard VisualLISP</span><span class="rvts43">©</span><span class="rvts25"> functions starting with "Vl" ...</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-acad-defun.html">vl-acad-defun</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-acad-undefun.html">vl-acad-undefun</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-arx-import.html">vl-arx-import</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-bb-ref.html">vl-bb-ref</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts36" href="vl-bb-set.html">vl-bb-set</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-catch-all-apply.html">vl-catch-all-apply</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-catch-all-error-message.html">vl-catch-all-error-message</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-catch-all-error-p.html">vl-catch-all-error-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-cmdf.html">vl-cmdf</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-consp.html">vl-consp</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-directory-files.html">vl-directory-files</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-doc-export.html">vl-doc-export</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-doc-import.html">vl-doc-import</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-doc-ref.html">vl-doc-ref</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-doc-set.html">vl-doc-set</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-every.html">vl-every</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-exit-with-error.html">vl-exit-with-error</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-exit-with-value.html">vl-exit-with-value</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-copy.html">vl-file-copy</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-delete.html">vl-file-delete</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-directory-p.html">vl-file-directory-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-filename-base.html">vl-filename-base</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-filename-directory.html">vl-filename-directory</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-filename-extension.html">vl-filename-extension</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-filename-mktemp.html">vl-filename-mktemp</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-rename.html">vl-file-rename</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-size.html">vl-file-size</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-file-systime.html">vl-file-systime</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-get-resource.html">vl-get-resource</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-init.html">vl-init</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-delete1.html">vl-layerstates-delete</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-has.html">vl-layerstates-has</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-list.html">vl-layerstates-list</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-getpropertymask.html">vl-layerstates-getpropertymask</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-setpropertymask.html">vl-layerstates-setpropertymask</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-getdescription.html">vl-layerstates-getdescription</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-setdescription.html">vl-layerstates-setdescription</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-rename.html">vl-layerstates-rename</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-restore.html">vl-layerstates-restore</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-layerstates-save.html">vl-layerstates-save</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-list.html">vl-list*</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-list-string.html">vl-list-&gt;string</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-list-exported-functions.html">vl-list-exported-functions</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-list-length.html">vl-list-length</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-list-loaded-vlx.html">vl-list-loaded-vlx</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-load-all.html">vl-load-all</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-load-com.html">vl-load-com</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-load-reactors.html">vl-load-reactors</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-member-if.html">vl-member-if</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-member-if-not.html">vl-member-if-not</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-mkdir.html">vl-mkdir</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-position.html">vl-position</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-prin1-to-string.html">vl-prin1-to-string</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-princ-to-string.html">vl-princ-to-string</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-propagate.html">vl-propagate</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-registry-delete.html">vl-registry-delete</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-registry-descendents.html">vl-registry-descendents</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-registry-read.html">vl-registry-read</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-registry-write.html">vl-registry-write</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-remove.html">vl-remove</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-remove-if.html">vl-remove-if</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-remove-if-not.html">vl-remove-if-not</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-some.html">vl-some</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-sort.html">vl-sort</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-sort-i.html">vl-sort-i</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-list.html">vl-string-&gt;list</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-elt.html">vl-string-elt</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-left-trim.html">vl-string-left-trim</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-mismatch.html">vl-string-mismatch</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-position.html">vl-string-position</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-right-trim.html">vl-string-right-trim</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-search.html">vl-string-search</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-subst.html">vl-string-subst</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-translate.html">vl-string-translate</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-string-trim.html">vl-string-trim</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-symbol-name.html">vl-symbol-name</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-symbolp.html">vl-symbolp</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-symbol-value.html">vl-symbol-value</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-unload-vlx.html">vl-unload-vlx</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vbaload.html">vl-vbaload</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vbarun.html">vl-vbarun</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vlx-loaded-p.html">vl-vlx-loaded-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-set-color1.html">vl-vplayer-set-color</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-set-truecolor.html">vl-vplayer-set-truecolor</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-set-linetype.html">vl-vplayer-set-linetype</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-set-lineweight.html">vl-vplayer-set-lineweight</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-set-transparency.html">vl-vplayer-set-transparency</a></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-get-color.html">vl-vplayer-get-color</a></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-get-linetype.html">vl-vplayer-get-linetype</a></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-get-lineweight.html">vl-vplayer-get-lineweight</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 205px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vplayer-get-transparency.html">vl-vplayer-get-transparency</a></p>
+  </td>
+  <td style="padding: 1px; width: 207px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 180px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 179px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 208px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

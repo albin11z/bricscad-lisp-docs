@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>V.1.4</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="V.1.4">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="V.1.4" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="V14"
+		  data-hnd-context="1219"
+		  data-hnd-title="V.1.4"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Introduction.html">Introduction</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Introduction.html" title="Introduction" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="V15.html" title="V.1.5" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="V13.html" title="V.1.3" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>V.1.4</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts39">Additions &amp; Changes with BricsCAD V21</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">BLADE</span><span class="rvts25"> LISP IDE now better supports UTF-8/16 encoded Lisp source files, on all platforms (Windows/Linux/Mac) - using the BOM with all UTF-8/16 encoding is </span><span class="rvts26">strongly</span><span class="rvts25"> suggested (or better to use plain ANSI format, no encoding, if possible)</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Improvements and Additions for DEScoder.exe v2.9</span><br/><span class="rvts25">fixes issues with "Code Compression", and adds active support for debugging;</span><br/><span class="rvts25">.des files created with DEScoder.exe v2.9 are backward compatible, created .des files can be loaded in all older BricsCAD versions;</span><br/><span class="rvts25">active debugging support applies to "DES Container files" and "DES Single file" mode</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">added </span><span class="rvts26">new</span><span class="rvts25"> </span><a class="rvts27" href="GenericPropertiesFunctions.html">Generic Properties Functions</a><span class="rvts25"> family to improve compatibility with AutoCAD :</span><br/><span class="rvts25">additionally, properties of BricsCAD's BIM MCAD Civil TinSurface IFC2x3 IFC4 and external 3rd party applications (those which support the C++ OPM API) can be queried + modified</span></li>
+</ul>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">added </span><span class="rvts26">new </span><a class="rvts27" href="BricsCADCivilTinSurfaceLISPAPI.html">TinSurface</a><span class="rvts25"> functions :</span><br/><span class="rvts25">these functions allow to create, query and modify the BricsCAD Civil TinSurface entities</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">new </span><a class="rvts27" href="BricsCADSheetSetManagerCOMLISPAP.html">SheetSetManager COM interface</a><span class="rvts25"> has been added (compatible with AutoCAD) :</span><br/><span class="rvts25">due to a proper implementation, this SheetSetManager COM interface is fully accessible by Lisp, VBA/VB, and C/C++, from in-process and out-of-process application code</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Extended VLA functions (properties + methods) for Linux + Mac (also for "Fast-COM" under Windows)</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">AddItems</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">Alignment</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">BasePoint</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">Boolean</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">Coordinate</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">DirectionVector</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">MajorAxis</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">MajorRadius</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">MinorAxis</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">MinorRadius</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">RadiusRatio</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25">SecondPoint</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">SectionSolid</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">SliceSolid</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25">Type</span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 233px;">
+   <p class="rvps2"><span class="rvts25">XVector</span></p>
+  </td>
+  <td style="padding: 1px; width: 260px;">
+   <p class="rvps2"><span class="rvts25">YVector</span></p>
+  </td>
+  <td style="padding: 1px; width: 222px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Extended DOSLib implementations for Linux + Mac</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps2"><a class="rvts35" href="dos_strtokens.html">dos_strtokens</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps2"><a class="rvts35" href="dos_strtrim.html">dos_strtrim</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><a class="rvts35" href="dos_strtrimleft.html">dos_strtrimleft</a></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps2"><a class="rvts35" href="dos_strtrimright.html">dos_strtrimright</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">added </span><span class="rvts26">new </span><a class="rvts27" href="VLELISPFunctionLibrary.html">VLE functions</a><span class="rvts25"> :</span><br/><span class="rvts25"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps2"><a class="rvts35" href="vle-edittextinplace.html">vle-edittextinplace</a></p>
+  </td>
+  <td style="padding: 1px; width: 278px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><span class="rvts25">&nbsp;</span></p>
+  </td>
+  <td style="padding: 1px; width: 305px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">New BricsCAD BIM interface functions related to new "Spaces" concept</span><br/><span class="rvts26"><br/></span></li>
+</ul>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-allspaces.html">bim:get-allspaces</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-space.html">bim:get-space</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-isspacevalid.html">bim:get-isspacevalid</a></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-isspaceupdated.html">bim:get-isspaceupdated</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-spacenumber.html">bim:get-spacenumber</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-spacearea.html">bim:get-spacearea</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-spaceboundaryents.html">bim:get-spaceboundaryents</a></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps2"><a class="rvts35" href="bimget-spacerepresentation.html">bim:get-spacerepresentation</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 52px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 250px;">
+   <p class="rvps2"><a class="rvts35" href="bimset-spacenumber.html">bim:set-spacenumber</a></p>
+  </td>
+  <td style="padding: 1px; width: 275px;">
+   <p class="rvps2"><a class="rvts35" href="bimset-spacerepresentation.html">bim:set-spacerepresentation</a></p>
+  </td>
+  <td style="padding: 1px; width: 234px;">
+   <p class="rvps2"><a class="rvts35" href="bimcreate-space.html">bim:create-space</a></p>
+  </td>
+  <td style="padding: 1px; width: 300px;">
+   <p class="rvps2"><a class="rvts35" href="bimupdate-space.html">bim:update-space</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts26">Improvements and Additions for BLADE</span><br/><span class="rvts25"></span><br/><span class="rvts25">the </span><span class="rvts26">Resources</span><span class="rvts25"> tab now always shows the new </span><span class="rvts40">LISP Core Functions</span><span class="rvts25"> branch, using "Console", "Lisp/DES files" and "BRX/NET files", documenting all loaded files, with all their defined DEFUN functions and commands;</span><br/><span class="rvts25">it also shows disabled DEFUN names (because overwritten by another Lisp/BRX/NET file);</span><br/><span class="rvts25">failing Lisp files are indicated in red color, defined DEFUN functions are listed as loaded until error occurred</span><br/><span class="rvts25"></span><br/><span class="rvts26">Debugging is now significantly easier :</span><span class="rvts25"> Lisp files (.lsp and .des) can be loaded outside BLADE, and are still available for debugging; BLADE automatically recognises the original source file, regardless whether loaded outside or inside Debugger, and can actively use the Lisp source</span><br/><span class="rvts25">(also for DES encrypted Lisp files, once created with DEScoder v2.9)</span><br/><span class="rvts25"></span><br/><span class="rvts25"><br/></span></li>
+</ul>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

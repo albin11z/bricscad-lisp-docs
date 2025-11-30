@@ -1,0 +1,1353 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Element Type Constants</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="BIM Element Type Constants">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Element Type Constants">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Element Type Constants" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ElementTypeConstants"
+		  data-hnd-context="548"
+		  data-hnd-title="Element Type Constants"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="BricsCADBIMLISPAPI.html">BricsCAD BIM LISP API</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BricsCADBIMLISPAPI.html" title="BricsCAD BIM LISP API" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="vlloadbim.html" title="vl-load-bim" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ObjectTypeConstants.html" title="Object Type Constants" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Element Type Constants</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">BIM Element Type Constants</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">To specify the type of a "BIM Element", the LISP engine provides a convenient way to use predefined variables for the enumerated type values.</span><br/><span class="rvts25"></span><br/><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 5px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">Variable/Symbol Name</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts26">Integer</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts26">BIM Element Type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts26">as String Type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimNoBuildingElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">-1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimGenericBuildingElt</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">unspecified, or generic, element</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"GenericBuildingElement"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSection</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Section</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Section"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimWall</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">2</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Wall</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Wall"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimWindow</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">3</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Window</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Window"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDoor</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">4</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Door</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Door"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimColumn</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">5</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Column</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Column"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSlab</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">6</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Slab</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Slab"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimBeam</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">7</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Beam</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Beam"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimRoom</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">8</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Room</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Room"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimCovering</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">9</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Covering</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Covering"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimCurtainWall</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">10</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">CurtainWall</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"CurtainWall"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowTerminal</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">11</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowTerminal</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowTerminal"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFurnishingElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">12</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FurnishingElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FurnishingElement"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimMember</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">13</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Member</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Member"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimPile</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">14</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Pile</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Pile"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimRailing</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">15</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Railing</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Railing"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimRamp</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">16</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Ramp</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Ramp"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimRampFlight</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">17</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">RampFlight</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"RampFlight"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimRoof</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">18</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Roof</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Roof"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSite</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">19</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Site</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Site"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimStair</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">20</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Stair</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Stair"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimStairFlight</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">21</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">StairFlight</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"StairFlight"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFooting</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">22</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Footing</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Footing"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">--- obsolete---</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">23,24,25</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">no longer supported</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">no longer supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimXReference</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">26</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">XReference</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"XReference"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDistributionControlElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">27</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">DistributionControlElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"DistributionControlElement"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDistributionPort</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">28</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">DistributionPort</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"DistributionPort"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDistributionFlowElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">29</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">DistributionFlowElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"DistributionFlowElement"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDistributionChamberElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">30</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">DistributionChamberElement</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"DistributionChamberElement"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimEnergyConversionDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">31</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">EnergyConversionDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"EnergyConversionDevice"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowFitting</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">32</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowFitting</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowFitting"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowController</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">33</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowController</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowController"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowMovingDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">34</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowMovingDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowMovingDevice"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowSegment</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">35</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowSegment</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowSegment"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowStorageDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">36</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowStorageDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowStorageDevice"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowTreatmentDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">37</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowTreatmentDevice</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowTreatmentDevice"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimReinforcingBar</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">38</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">ReinforcingBar</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"ReinforcingBar"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimReinforcingMesh</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">39</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">ReinforcingMesh</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"ReinforcingMesh"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimTendon</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">40</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Tendon</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Tendon"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimTendonAnchor</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">41</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">TendonAnchor</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"TendonAnchor"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimPlate</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">42</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">BimPlate</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"BimPlate"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDiscreteAccessory</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">43</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">DiscreteAccessory</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"DiscreteAccessory"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFastener</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">44</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">BimFastener</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"BimFastener"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimMechanicalFastener</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">45</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">MechanicalFastener</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"MechanicalFastener"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSchedule</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">46</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Schedule</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Schedule"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimGridAxis</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">47</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">GridAxis</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"GridAxis"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimGrid</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">48</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Grid</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Grid"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimFlowConnectionPoint</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">49</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">FlowConnectionPoint</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"FlowConnectionPoint"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimOpening</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">50</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Opening</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Opening"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimAnnotation (since V20)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">51</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Annotation</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Annotation"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSpatialElementType (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">52</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">SpatialElement type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Spatial Element"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSpaceType (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">53</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Space type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Space"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimBuildingType (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">54</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Building type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Building"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimStoryType (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">55</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Story type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Story"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimViewport (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">56</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Viewport type</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"Viewport"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimProduct (since V23)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">57</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts55">Product</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts55">"BimProduct"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimDetail (since V23)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">58</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Detail</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25">"BimDetail"</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSpaceStyleSolid (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">0</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Space Representation as "3dSolid"</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 0px 2px; width: 35px;">
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 285px;">
+   <p class="rvps2"><span class="rvts26">bcBimSpaceStyleFootprint (since V21)</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 104px;">
+   <p class="rvps3"><span class="rvts25">1</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 258px;">
+   <p class="rvps3"><span class="rvts25">Space Representation as "Footprint"</span></p>
+  </td>
+  <td style="padding: 0px 2px; width: 274px;">
+   <p class="rvps3"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts26"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

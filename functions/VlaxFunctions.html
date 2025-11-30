@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Vlax Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Vla Functions,Vlax Functions">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vlax Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Vlax Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="VlaxFunctions"
+		  data-hnd-context="730"
+		  data-hnd-title="Vlax Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AutoLISPCStandardFunctions.html">AutoLISP&copy; Standard Functions</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AutoLISPCStandardFunctions.html" title="AutoLISP&copy; Standard Functions" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="vl-vplayer-get-transparency.html" title="vl-vplayer-get-transparency" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="vlax-2d-point.html" title="vlax-2d-point" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Vlax Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">Vlax Functions</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">This chapter covers the standard AutoLISP</span><span class="rvts43">©</span><span class="rvts25"> functions starting with "Vlax-" ... COM related utility functions.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-2d-point.html">vlax-2d-point</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-3d-point.html">vlax-3d-point</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-add-cmd.html">vlax-add-cmd</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-create-object.html">vlax-create-object</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts36" href="vlax-curve-getarea.html">vlax-curve-getarea</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getclosestpointto.html">vlax-curve-getclosestpointto</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getclosestpointtoproj.html">vlax-curve-getclosestpointtoprojection</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getdistatparam.html">vlax-curve-getdistatparam</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getdistatpoint.html">vlax-curve-getdistatpoint</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getendparam.html">vlax-curve-getendparam</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getendpoint.html">vlax-curve-getendpoint</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getfirstderiv.html">vlax-curve-getfirstderiv</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getparamatdist.html">vlax-curve-getparamatdist</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getparamatpoint.html">vlax-curve-getparamatpoint</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getpointatdist.html">vlax-curve-getpointatdist</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getpointatparam.html">vlax-curve-getpointatparam</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getsecondderiv.html">vlax-curve-getsecondderiv</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getstartparam.html">vlax-curve-getstartparam</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-getstartpoint.html">vlax-curve-getstartpoint</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-isclosed.html">vlax-curve-isclosed</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-isperiodic.html">vlax-curve-isperiodic</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-curve-isplanar.html">vlax-curve-isplanar</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-dump-object.html">vlax-dump-object</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ename-vla-object.html">vlax-ename-&gt;vla-object</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-erased-p.html">vlax-erased-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-for.html">vlax-for</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-get-acad-object.html">vlax-get-acad-object</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-get-object.html">vlax-get-object</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-get-or-create-object.html">vlax-get-or-create-object</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-get-property.html">vlax-get-property</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-import-type-library.html">vlax-import-type-library</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-invoke-method.html">vlax-invoke-method</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ldata-delete.html">vlax-ldata-delete</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ldata-get.html">vlax-ldata-get</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ldata-list.html">vlax-ldata-list</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ldata-put.html">vlax-ldata-put</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-ldata-test.html">vlax-ldata-test</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-machine-product-key.html">vlax-machine-product-key</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-make-safearray.html">vlax-make-safearray</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-make-variant.html">vlax-make-variant</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-map-collection.html">vlax-map-collection</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-method-applicable-p.html">vlax-method-applicable-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-object-released-p.html">vlax-object-released-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-product-key.html">vlax-product-key</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-property-available-p.html">vlax-property-available-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-put-property.html">vlax-put-property</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-queueexpr.html">vlax-queueexpr</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-read-enabled-p.html">vlax-read-enabled-p</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-release-object.html">vlax-release-object</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-remove-cmd.html">vlax-remove-cmd</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-fill.html">vlax-safearray-fill</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-get-dim.html">vlax-safearray-get-dim</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-get-element.html">vlax-safearray-get-element</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-get-l-bound.html">vlax-safearray-get-l-bound</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-get-u-bound.html">vlax-safearray-get-u-bound</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-put-element.html">vlax-safearray-put-element</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-type.html">vlax-safearray-type</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-value.html">vlax-safearray-value</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-safearray-list.html">vlax-safearray-&gt;list</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-tmatrix.html">vlax-tmatrix</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-typeinfo-available-p.html">vlax-typeinfo-available-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-user-product-key.html">vlax-user-product-key</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-variant-change-type.html">vlax-variant-change-type</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-variant-type.html">vlax-variant-type</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 28px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 237px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-variant-value.html">vlax-variant-value</a></p>
+  </td>
+  <td style="padding: 1px; width: 239px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-vla-object-ename.html">vlax-vla-object-&gt;ename</a></p>
+  </td>
+  <td style="padding: 1px; width: 286px;">
+   <p class="rvps9"><a class="rvts35" href="vlax-write-enabled-p.html">vlax-write-enabled-p</a></p>
+  </td>
+  <td style="padding: 1px; width: 214px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><a class="rvts27" href="VlaxHiddenFunctions.html">Vlax Hidden Functions</a><span class="rvts25"> &nbsp; these functions are also present in AutoLISP</span><span class="rvts43">©</span><span class="rvts25">, but not documented</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

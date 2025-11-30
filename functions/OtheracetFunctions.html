@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Other (acet-) Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="(acet-xxx) - other utility Functions">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Other (acet-) Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Other (acet-) Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="OtheracetFunctions"
+		  data-hnd-context="145"
+		  data-hnd-title="Other (acet-) Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ExpressToolsAPISupport.html">ExpressTools API Support</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ExpressToolsAPISupport.html" title="ExpressTools API Support" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="acetxdataset.html" title="acet-xdata-set" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="acetacadrefresh.html" title="acet-acad-refresh" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Other (acet-) Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">(acet-xxx) - Other Utility Functions</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetacadrefresh.html">acet-acad-refresh</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetangleequal.html">acet-angle-equal</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetangleformat.html">acet-angle-format</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetappiddelete.html">acet-appid-delete</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetautoload.html">acet-autoload</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetautoload2.html">acet-autoload2</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetautoloadarx.html">acet-autoloadarx</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetalert.html">acet-alert</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetarxloadorbust.html">acet-arxload-or-bust</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetblinkandshowobject.html">acet-blink-and-show-object</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetcleartempgraphics.html">acet-clear-temp-graphics</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetcmdexit.html">acet-cmd-exit</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetdcllistmake.html">acet-dcl-list-make</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetdxf.html">acet-dxf</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetdtor.html">acet-dtor</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetexplode.html">acet-explode</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetrtod.html">acet-rtod</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetfscreentoggle.html">acet-fscreen-toggle</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetinitfaslib.html">acet-init-fas-lib</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetpointflat.html">acet-point-flat</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetprefsupportpathlist.html">acet-pref-supportpath-list</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetcmdexit.html"><br/></a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetundobegin.html">acet-undo-begin</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetundoend.html">acet-undo-end</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetutilver.html">acet-util-ver</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetsafecommand.html">acet-safe-command</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetsetcmdecho.html">acet-set-cmdecho</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetspinner.html">acet-spinner</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetandmatch.html">acet-and-match</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetnotmatch.html">acet-not-match</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetormatch.html">acet-or-match</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetgcmatch.html">acet-gc-match</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet4match.html">acet-4-match</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetfiltermatch.html">acet-filter-match</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acettempsegment.html">acet-temp-segment</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acettruncate2view.html">acet-truncate-2-view</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetwmfin.html">acet-wmfin</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetmstops.html">acet-ms-to-ps</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetpstoms.html">acet-ps-to-ms</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acetgetwinfontpath.html">acet-get-winfont-path</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet-copym.html">acet-copym</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet-copytolayer.html">acet-copytolayer</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet-rotate-text.html">acet-rotate-text</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet-shx-loaded.html">acet-shx-loaded</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><a class="rvts35" href="acet-shx-reload.html">acet-shx-reload</a></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 247px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Methods supporting Fast-COM</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Object Methods providing &quot;Fast-COM&quot;support">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Methods supporting Fast-COM">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Methods supporting Fast-COM" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="MethodssupportingFastCOM"
+		  data-hnd-context="284"
+		  data-hnd-title="Methods supporting Fast-COM"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="LISPFastCOM.html">LISP &quot;Fast-COM&quot;</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="LISPFastCOM.html" title="LISP &quot;Fast-COM&quot;" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PropertiessupportingFast-COM.html" title="Properties supporting Fast-COM" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ImplementationScheme.html" title="Implementation Scheme" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Methods supporting Fast-COM</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">Object Methods providing "Fast-COM" support</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">The Methods listed below are already implemented in Fast-COM mode (and are therefore available on Linux / Mac platforms as well);</span><br/><span class="rvts25">all Methods not listed are managed by normal Windows COM (and are therefore not yet available on Linux / Mac platforms);</span><br/><span class="rvts25">this is ongoing work, so more Methods will become available and listed here.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Method functions can be called in usual way - as dedicated functions </span><span class="rvts26">(vla-&lt;method&gt; ...)</span><span class="rvts25"> or using generic </span><span class="rvts26">(vlax-invoke-method '&lt;method&gt; ...)</span><span class="rvts25">, the "Fast-COM" mode covers both.</span><br/><span class="rvts25"></span><br/><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 21px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 187px;">
+   <p class="rvps2"><span class="rvts25">Activate</span><br/><span class="rvts25">Add</span><br/><span class="rvts25">AddCustomInfo</span><br/><span class="rvts25">Add3dFace</span><br/><span class="rvts25">Add3dMesh</span><br/><span class="rvts25">Add3dPoly</span><br/><span class="rvts25">AddArc</span><br/><span class="rvts25">AddAttribute</span><br/><span class="rvts25">AddBox</span><br/><span class="rvts25">AddCircle</span><br/><span class="rvts25">AddCone</span><br/><span class="rvts25">AddCustomObject</span><br/><span class="rvts25">AddCylinder</span><br/><span class="rvts25">AddDim3PointAngular</span><br/><span class="rvts25">AddDimAligned</span><br/><span class="rvts25">AddDimAngular</span><br/><span class="rvts25">AddDimArc</span><br/><span class="rvts25">AddDimDiametric</span><br/><span class="rvts25">AddDimRadial</span><br/><span class="rvts25">AddDimRadialLarge</span><br/><span class="rvts25">AddDimRotated</span><br/><span class="rvts25">AddDimOrdinate</span><br/><span class="rvts25">AddObject</span><br/><span class="rvts25">AddXrecord</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 228px;">
+   <p class="rvps2"><span class="rvts25">AddEllipse</span><br/><span class="rvts25">AddEllipticalCylinder</span><br/><span class="rvts25">AddEllipticalCone</span><br/><span class="rvts25">AddExtrudedSolid</span><br/><span class="rvts25">AddExtrudedSolidAlongPath</span><br/><span class="rvts25">AddHatch</span><br/><span class="rvts25">AddItems</span><br/><span class="rvts25">AddLeader</span><br/><span class="rvts25">AddLightWeightPolyline</span><br/><span class="rvts25">AddLine</span><br/><span class="rvts25">AddMInsertBlock</span><br/><span class="rvts25">AddMLeader</span><br/><span class="rvts25">AddMline</span><br/><span class="rvts25">AddMText</span><br/><span class="rvts25">AddPoint</span><br/><span class="rvts25">AddPolyfaceMesh</span><br/><span class="rvts25">AddPolyline</span><br/><span class="rvts25">AddPViewport</span><br/><span class="rvts25">AddRaster</span><br/><span class="rvts25">AddRay</span><br/><span class="rvts25">AddRegion</span><br/><span class="rvts25">AddRevolvedSolid</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 192px;">
+   <p class="rvps2"><span class="rvts25">AddSection</span><br/><span class="rvts25">AddShape</span><br/><span class="rvts25">AddSolid</span><br/><span class="rvts25">AddSphere</span><br/><span class="rvts25">AddSpline</span><br/><span class="rvts25">AddTable</span><br/><span class="rvts25">AddText</span><br/><span class="rvts25">AddTolerance</span><br/><span class="rvts25">AddTorus</span><br/><span class="rvts25">AddTrace</span><br/><span class="rvts25">AddWedge</span><br/><span class="rvts25">AddXLine</span><br/><span class="rvts25"></span><br/><span class="rvts25">AbortTransaction</span><br/><span class="rvts25">AppendInnerLoop</span><br/><span class="rvts25">AppendItems</span><br/><span class="rvts25">AppendOuterLoop</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 201px;">
+   <p class="rvps2"><span class="rvts25">Boolean</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">CheckInterference</span><br/><span class="rvts25">ClipBoundary</span><br/><span class="rvts25">Clear</span><br/><span class="rvts25">Close</span><br/><span class="rvts25">ConvertToAnonymousBlock</span><br/><span class="rvts25">ConvertToStaticBlock</span><br/><span class="rvts25">Copy</span><br/><span class="rvts25">CopyFrom</span><br/><span class="rvts25">CopyObjects</span><br/><span class="rvts25">CopyProfile</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 138px;">
+   <p class="rvps2"><span class="rvts25">Delete</span><br/><span class="rvts25">DeleteProfile</span><br/><span class="rvts25">Display</span><br/><span class="rvts25">DxfIn</span><br/><span class="rvts25">DxfOut</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 109px;">
+   <p class="rvps2"><span class="rvts25">EndTransaction</span><br/><span class="rvts25">EndUndoMark</span><br/><span class="rvts25">Erase</span><br/><span class="rvts25">Evaluate</span><br/><span class="rvts25">Explode</span></p>
+   <p class="rvps2"><span class="rvts25">ExportProfile</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 21px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 187px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 228px;">
+   <p class="rvps2"><span class="rvts25">GetAllProfileNames</span><br/><span class="rvts25">GetAttributes</span><br/><span class="rvts25">GetBlockAttributeValue</span><br/><span class="rvts25">GetBlockAttributeValue2</span><br/><span class="rvts25">GetBlockAttributeValue32</span><br/><span class="rvts25">GetBlockAttributeValue232</span><br/><span class="rvts25">GetBoundingBox</span><br/><span class="rvts25">GetBulge</span><br/><span class="rvts25">GetCanonicalMediaNames</span><br/><span class="rvts25">GetCellAlignment</span><br/><span class="rvts25">GetCellTextHeight</span><br/><span class="rvts25">GetCellTextStyle</span><br/><span class="rvts25">GetColumnWidth</span><br/><span class="rvts25">GetConstantAttributes</span><br/><span class="rvts25">GetCustomByIndex</span><br/><span class="rvts25">GetCustomByKey</span><br/><span class="rvts25">GetCustomScale</span><br/><span class="rvts25">GetDynamicBlockProperties</span><br/><span class="rvts25">GetExtensionDictionary</span><br/><span class="rvts25">GetInterfaceObject</span><br/><span class="rvts25">GetLoopAt</span><br/><span class="rvts25">GetMinimumColumnWidth</span><br/><span class="rvts25">GetMinimumRowHeight</span><br/><span class="rvts25">GetName</span><br/><span class="rvts25">GetObject</span><br/><span class="rvts25">GetObjectIdString</span><br/><span class="rvts25">GetPaperMargins</span><br/><span class="rvts25">GetPaperSize</span><br/><span class="rvts25">GetPlotDeviceNames</span><br/><span class="rvts25">GetPlotStyleTableNames</span><br/><span class="rvts25">GetPoint</span><br/><span class="rvts25">GetProjectFilePath</span><br/><span class="rvts25">GetRowHeight</span><br/><span class="rvts25">GetText</span><br/><span class="rvts25">GetTextHeight</span><br/><span class="rvts25">GetVariable</span><br/><span class="rvts25">GetWeight</span><br/><span class="rvts25">GetWidth</span><br/><span class="rvts25">GetWindowToPlot</span><br/><span class="rvts25">GetXData</span><br/><span class="rvts25">GetXrecordData</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 192px;">
+   <p class="rvps2"><span class="rvts25">HandleToObject</span><br/><span class="rvts25">Highlight</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 201px;">
+   <p class="rvps2"><span class="rvts25">ImportProfile</span><br/><span class="rvts25">InsertBlock</span><br/><span class="rvts25">InsertLoopAt</span><br/><span class="rvts25">IntersectWith</span><br/><span class="rvts25">InsertMenuInMenuBar</span><br/><span class="rvts25">Item</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 138px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 109px;">
+   <p class="rvps2"><span class="rvts25">ListArx</span><br/><span class="rvts25">LoadArx</span><br/><span class="rvts25">Load</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 21px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 187px;">
+   <p class="rvps2"><span class="rvts25">Mirror</span><br/><span class="rvts25">Mirror3d</span><br/><span class="rvts25">Move</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 228px;">
+   <p class="rvps2"><span class="rvts25">NumCustomInfo</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 192px;">
+   <p class="rvps2"><span class="rvts25">ObjectIdToObject</span><br/><span class="rvts25">ObjectIdToObject32</span><br/><span class="rvts25">ObjectId32ToObjectIdString</span><br/><span class="rvts25">Open</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 201px;">
+   <p class="rvps2"><span class="rvts25">PolarPoint</span><br/><span class="rvts25">PostCommand</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 138px;">
+   <p class="rvps2"><span class="rvts25">Quit</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 109px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 21px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 187px;">
+   <p class="rvps2"><span class="rvts25">RefreshPlotDeviceInfo</span><br/><span class="rvts25">Regen</span><br/><span class="rvts25">Remove</span><br/><span class="rvts25">RemoveCustomByIndex</span><br/><span class="rvts25">RemoveCustomByKey</span><br/><span class="rvts25">Rename</span><br/><span class="rvts25">Replace</span><br/><span class="rvts25">Rotate</span><br/><span class="rvts25">Rotate3d</span><br/><span class="rvts25">RemoveItems</span><br/><span class="rvts25">RenameProfile</span><br/><span class="rvts25">ResetProfile</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 228px;">
+   <p class="rvps2"><span class="rvts25">Save</span><br/><span class="rvts25">SaveAs</span><br/><span class="rvts25">ScaleEntity</span><br/><span class="rvts25">SectionSolid</span><br/><span class="rvts25">SendCommand</span><br/><span class="rvts25">SendModelessOperationStart</span><br/><span class="rvts25">SendModelessOperationEnded</span><br/><span class="rvts25">SetBitmaps</span><br/><span class="rvts25">SetBulge</span><br/><span class="rvts25">SetCellAlignment</span><br/><span class="rvts25">SetCellTextHeight</span><br/><span class="rvts25">SetCellTextStyle</span><br/><span class="rvts25">SetColumnWidth</span><br/><span class="rvts25">SetCustomByIndex</span><br/><span class="rvts25">SetCustomByKey</span><br/><span class="rvts25">SetPattern</span><br/><span class="rvts25">SetRowHeight</span><br/><span class="rvts25">SetXData</span><br/><span class="rvts25">SetXrecordData</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 192px;">
+   <p class="rvps2"><span class="rvts25">SendCommand</span><br/><span class="rvts25">SetBlockAttributeValue</span><br/><span class="rvts25">SetBlockAttributeValue2</span><br/><span class="rvts25">SetBlockAttributeValue32</span><br/><span class="rvts25">SetBlockAttributeValue232</span><br/><span class="rvts25">SetCustomScale</span><br/><span class="rvts25">SetText</span><br/><span class="rvts25">SetTextHeight</span><br/><span class="rvts25">SetVariable</span><br/><span class="rvts25">SetWeight</span><br/><span class="rvts25">SetWidth</span><br/><span class="rvts25">SetProjectFilePath</span><br/><span class="rvts25">SetWindowToPlot</span><br/><span class="rvts25">SetXData</span><br/><span class="rvts25">SliceSolid</span><br/><span class="rvts25">StartUndoMark</span><br/><span class="rvts25">StartTransaction</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 201px;">
+   <p class="rvps2"><span class="rvts25">TransformBy</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">UnloadArx</span><br/><span class="rvts25">Unload</span><br/><span class="rvts25">Update</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">VisualStyle</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">Wblock</span></p>
+  </td>
+  <td style="padding: 1px; width: 138px;">
+   <p class="rvps2"><span class="rvts25">ZoomAll</span><br/><span class="rvts25">ZoomCenter</span><br/><span class="rvts25">ZoomExtents</span><br/><span class="rvts25">ZoomPickWindow</span><br/><span class="rvts25">ZoomPrevious</span><br/><span class="rvts25">ZoomScaled</span><br/><span class="rvts25">ZoomWindow</span><br/><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 109px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 21px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 187px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 228px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 192px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 201px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 138px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 109px;">
+   <p class="rvps2"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+
