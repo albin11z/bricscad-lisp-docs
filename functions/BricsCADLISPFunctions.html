@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>BricsCAD LISP Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="BricsCAD LISP Functions">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BricsCAD LISP Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="BricsCAD LISP Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="BricsCADLISPFunctions"
+		  data-hnd-context="17"
+		  data-hnd-title="BricsCAD LISP Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="bcaddisableextendederror.html" title="bcad$disable-extended-error" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="BCADLicenseLevels.html" title="BCAD$LicenseLevels" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>BricsCAD LISP Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">BricsCAD-specific LISP Functions</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">There are a number of specific Lisp functions provided by BricsCAD Lisp engine, which are likely not present in other AutoLISP compatible CAD systems' Lisp engines.</span><br/><span class="rvts25"></span><br/><span class="rvts25">Therefore, using these BricscCAD-specific Lisp functions will cause your Lisp code to fail when running on other CAD systems - so it is in developers responsibility to carefully use them.</span><br/><span class="rvts25"></span><br/><span class="rvts25">We plan to duplicate (most of) these functions to the </span><a class="rvts34" href="VLELISPFunctionLibrary.html">VLE Function Library</a><span class="rvts25">, as this allows to make them available on other CAD platforms as well (wherever possible), providing better compatibility for developers' Lisp applications; this means, these functions documented here will always remain implemented, but VLE functions should be preferred.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">For all functions having a </span><a class="rvts34" href="VLELISPFunctionLibrary.html">VLE Function Library</a><span class="rvts25"> equivalent, it will be noted.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="BCADLicenseLevels.html">BCAD$LicenseLevels</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="inspector.html">inspector</a><span class="rvts25"> (since V18.2)</span></p>
+   <p class="rvps9"><a class="rvts37" href="acos.html">acos</a><br/><a class="rvts37" href="atanh.html">atanh</a><br/><a class="rvts37" href="cosh.html">cosh</a><br/><a class="rvts37" href="get_diskserialid.html">get_diskserialid</a><br/><a class="rvts36" href="grarc.html">grarc</a><br/><a class="rvts37" href="init_dialog.html">init_dialog</a><br/><a class="rvts37" href="lispinstall.html">lisp$install</a><br/><a class="rvts37" href="log10.html">log10</a><br/><a class="rvts37" href="position.html">position</a><br/><a class="rvts37" href="random.html">random</a><br/><a class="rvts37" href="remove.html">remove</a><br/><a class="rvts37" href="sinh.html">sinh</a><br/><a class="rvts37" href="stringsplit.html">string-split</a><br/><a class="rvts37" href="tanh.html">tanh</a><br/><a class="rvts37" href="vl-enable-user-cancel.html">vl-enable-user-cancel</a><br/><a class="rvts37" href="vl-getgeomextents.html">vl-getgeomextents</a><br/><a class="rvts37" href="vl-hidepromptmenu.html">vl-hidepromptmenu</a><br/><a class="rvts37" href="vl-layerstates-delete.html">vl-layerstates-delete</a><br/><a class="rvts37" href="vllayerstateslist.html">vl-layerstates-list</a><br/><a class="rvts37" href="vllayerstatessetpropertymask.html">vl-layerstates-setpropertymask</a><br/><a class="rvts37" href="vllayerstatessetdescription.html">vl-layerstates-setdescription</a><br/><a class="rvts37" href="vllayerstatesrestore.html">vl-layerstates-restore</a><br/><a class="rvts37" href="vl-list-loaded-lisp.html">vl-list-loaded-lisp</a><br/><a class="rvts37" href="vl-setcurrentdir.html">vl-setcurrentdir</a><br/><a class="rvts37" href="vla-collection-list.html">vla-collection-&gt;list</a><br/><a class="rvts36" href="vla-postcommand.html">vla-postcommand</a><span class="rvts42"> (since V22)</span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="dlg-sysvars.html">dlg-sysvars</a><span class="rvts25"> (since V20)</span></p>
+   <p class="rvps9"><a class="rvts37" href="asin.html">asin</a><br/><a class="rvts37" href="ceiling.html">ceiling</a><br/><a class="rvts37" href="floor.html">floor</a><br/><a class="rvts37" href="getpid.html">getpid</a><br/><a class="rvts36" href="grfill.html">grfill</a><br/><a class="rvts37" href="lispenablefastcom.html">lisp$enablefastcom</a><br/><a class="rvts37" href="lispversion.html">lisp$version</a><br/><a class="rvts37" href="mod.html">mod</a><br/><a class="rvts37" href="power.html">power</a><br/><a class="rvts37" href="redraw_dialog.html">redraw_dialog</a><br/><a class="rvts37" href="round.html">round</a><br/><a class="rvts37" href="sleep.html">sleep</a><br/><a class="rvts37" href="tan.html">tan</a><br/><a class="rvts37" href="until.html">until</a><br/><a class="rvts37" href="vl-getcurrentdir.html">vl-getcurrentdir</a><br/><a class="rvts37" href="vl-getstartupdir.html">vl-getstartupdir</a><br/><a class="rvts37" href="vl-showpromptmenu.html">vl-showpromptmenu</a><br/><a class="rvts37" href="vllayerstateshas.html">vl-layerstates-has</a><br/><a class="rvts37" href="vllayerstatesgetpropertymask.html">vl-layerstates-getpropertymask</a><br/><a class="rvts37" href="vl-layerstates-getdescription1.html">vl-layerstates-getdescription</a><br/><a class="rvts37" href="vllayerstatesrename.html">vl-layerstates-rename</a><br/><a class="rvts37" href="vllayerstatessave.html">vl-layerstates-save</a><br/><a class="rvts37" href="vl-rmdir.html">vl-rmdir</a><br/><a class="rvts37" href="vl-string-split.html">vl-string-split</a><br/><a class="rvts37" href="vlispoptimizer.html">vlisp-optimizer</a><br/><a class="rvts37" href="dictobjname.html">dictobjname</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-vector-project-pointToEntity.html">vl-vector-project-pointToEntity</a><span class="rvts25"> (since V20)</span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="_vlax-safearray-mode.html">_vlax-safearray-mode</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts26">Functions related to annotative scale + status</span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-get.html">vl-annotative-get</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-getscales.html">vl-annotative-getscales</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-set.html">vl-annotative-set</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-setscales.html">vl-annotative-setscales</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-scalelist.html">vl-annotative-scalelist</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-supported.html">vl-annotative-supported</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-remove.html">vl-annotative-remove</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-reset.html">vl-annotative-reset</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-addscale.html">vl-annotative-addscale</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-annotative-removescale.html">vl-annotative-removescale</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts26">Functions related to subentity selection</span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25">(since V23.1)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-subent-atpoint.html">vl-subent-atPoint</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-subent-select.html">vl-subent-select</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-subent-ssadd.html">vl-subent-ssadd</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-subent-ssdel.html">vl-subent-ssdel</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-subent-ssmemb.html">vl-subent-ssmemb</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><span class="rvts26">Local Undo related functions</span></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25">(since V24.1)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-local-undo-push.html">vl-local-undo-push</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-local-undo-pop.html">vl-local-undo-pop</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-local-undo-steps.html">vl-local-undo-steps</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><span class="rvts25"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 42px;">
+   <br/>
+  </td>
+  <td style="padding: 1px; width: 352px;">
+   <p class="rvps9"><a class="rvts35" href="vl-local-undo-reset.html">vl-local-undo-reset</a></p>
+  </td>
+  <td style="padding: 1px; width: 596px;">
+   <p class="rvps9"><a class="rvts35" href="vl-local-undo-clear.html">vl-local-undo-clear</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

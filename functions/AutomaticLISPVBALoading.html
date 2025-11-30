@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Automatic LISP + VBA Loading</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Automatic LISP + VBA Loading,Registry-based DemandLoad + Appload's &quot;AutoLoad&quot;">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automatic LISP + VBA Loading">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Automatic LISP + VBA Loading" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="AutomaticLISPVBALoading"
+		  data-hnd-context="519"
+		  data-hnd-title="Automatic LISP + VBA Loading"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="vlisp-compile.html" title="vlisp-compile" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ApploadDialog.html" title="Appload Dialog" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Automatic LISP + VBA Loading</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts23">Automatic LISP + VBA Loading</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">There are several ways to automatically load Lisp, VBA and BRX/NET files, mostly compatible with similar functionality found in other CAD systems.</span><br/><span class="rvts25"></span><br/><span class="rvts26">The most-often used and well-known mechanisms :</span><br/><span class="rvts25"></span><br/><span class="rvts26">for Lisp modules :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">using </span><span class="rvts26">"on_start.lsp"</span><span class="rvts25"> :application-provided Lisp file, automatically loaded at BricsCAD startup (and for each drawing opened, if ACADLSPASDOC=1 is configured)</span></li>
+ <li class="rvps2 noindent"><span class="rvts25">using </span><span class="rvts26">"on_doc_load.lsp"</span><span class="rvts25">, also application-provided Lisp file, automatically loaded with each drawing opened or created</span></li>
+ <li class="rvps2 noindent"><span class="rvts25">MenuLisp file(s) </span><span class="rvts26">"*.mnl"</span><span class="rvts25"> : for each menu (mnu/mns/cui) attached to BricsCAD, a </span><span class="rvts26">same-named MenuLisp file &lt;menuname&gt;.mnl</span><span class="rvts25"> is searched in the folder of the menu itself - and if the .mnl file is present, it is loaded as well, for each opened or created drawing</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts26">for BRX/NET modules :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">using </span><span class="rvts26">"autoload.rx"</span><span class="rvts25"> : application-provided text file, naming the modules to be loaded as a plain line-by-line list (with or without path - in latter case the files are searched the normal way, using defined SupportPathes)</span></li>
+ <li class="rvps2 noindent"><span class="rvts25">using </span><span class="rvts26">Registry-based DemandLoad</span><span class="rvts25"> mechanism - this is compatible with similar ARX mechanism, and available for BRX and BRX/.NET modules only</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts26">for VBA modules :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts25">no particular mechanism to automatically load VBA files is available - only suitable way is to use Lisp code to load desired VBA files, using (vl-vbaload) or (command ...) functions</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts23">Since V17: Registry-based DemandLoad + Appload's "AutoLoad"</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">With BricsCAD V17, there are 2 more mechanisms to automatically load Lisp, VBA and BRX/NET modules during startup and per-drawing (respectively), and on command invocation.</span><br/><span class="rvts25"></span><br/><span class="rvts25">The </span><span class="rvts26">Appload Dialog</span><span class="rvts25"> has been redesigned, and offers an "AutoLoad" feature, to load designated Lisp, VBA, BRX/NET modules during startup (and in case of Lisp programs, for each drawing opened/created).</span><br/><span class="rvts25">Informations are stored in "appload.dfs" file (searched for in SupportPaths), and the associated "AutoLoad" status for each file is stored in Registry, under current profile.</span><br/><span class="rvts25">This means, </span><span class="rvts26">Appload Dialog</span><span class="rvts25"> mechanism is per-profile and per-user.</span><br/><span class="rvts25"></span><br/><span class="rvts25">For more details, please see topic </span><a class="rvts27" href="ApploadDialog.html">Appload Dialog</a><span class="rvts25">.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Additionally, the </span><span class="rvts26">Registry-based DemandLoad</span><span class="rvts25"> mechanism has been extended to support Lisp and VBA files as well.</span><br/><span class="rvts25">Now it is possible, to define DemandLoad/Registry-based loading of Lisp and VBA application files, on BricsCAD startup and for each drawing opened/created, as well as Lisp/VBA application code loading, based on entering a command by user (or from other application code).</span><br/><span class="rvts25"></span><br/><span class="rvts25">For more details, please see topic </span><a class="rvts27" href="RegistryDemandLoad.html">Registry DemandLoad</a><span class="rvts25">.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts23">Important hint for all AutoLoad mechanisms</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">There is a BricsCAD-specific Lisp function </span><a class="rvts27" href="vl-list-loaded-lisp.html">(vl-list-loaded-lisp)</a><span class="rvts25">, which can help Lisp developers and applications, to work independent on SupportPaths setting.</span><br/><span class="rvts25">After an application's LISP file was loaded, by any of the mentioned mechanisms, (vl-list-loaded-lisp) returns a list of loaded Lisp files, and the Lisp files are specified with their full path included &nbsp;- the application can check for an "magic" file there, and extract the folder of that "magic" Lisp file</span><br/><span class="rvts25">=&gt; hence, a Lisp application can dynamically determine its "home / installation folder" at runtime, and assign that path to a global variable.</span><br/><span class="rvts25"></span><br/><span class="rvts26">example :</span><br/><span class="rvts25">assume, the application's home folder is assigned to a variable $HomeFolder_MyApp; later on, any loading of Lisp, DCL, VBA files might use that home folder variable always :</span><br/><span class="rvts25">(setq MyAppFile1 (findfile (strcat $HomeFolder_MyApp "MyLisp1.lsp")))</span><br/><span class="rvts25">(if MyAppFile1 (load MyAppFile1)) (alert "* Installation Error"))</span><br/><span class="rvts25"></span><br/><span class="rvts25">This way, a Lisp application can work entirely without any dependency on SupportPaths.</span><br/><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,500 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>bmlispget</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="bmlispget">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="bmlispget">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="bmlispget" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="bmlispget"
+		  data-hnd-context="523"
+		  data-hnd-title="bmlispget"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="BricsCADSheetMetalLISPAPI.html">BricsCAD SheetMetal LISP API</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BricsCADSheetMetalLISPAPI.html" title="BricsCAD SheetMetal LISP API" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="BricsCADSheetMetalLISPAPI.html" title="BricsCAD SheetMetal LISP API" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="smlispget.html" title="smlispget" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>bmlispget</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">bmlispget</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts26">(bmlispget &nbsp;feature &nbsp;...)</span><br/><span class="rvts25"></span><br/><span class="rvts25">The (bmlispget ...) function uses variable arguments - a general summary on all argument combination is given with (bmlispget "?") or (bmlispget "help").</span><br/><span class="rvts25">Here is the complete list of all </span><span class="rvts26">feature</span><span class="rvts25"> options, in alphabetic order :</span><br/><span class="rvts25"><br/></span></p>
+<div class="rvps2">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 0px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps3"><span class="rvts26">Feature</span><span class="rvts25"> (as String)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps3"><span class="rvts26">Input Arguments</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps3"><span class="rvts26">Return / Output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps3"><span class="rvts26">Example</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">BlockReference</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Assembly name</span><br/><span class="rvts25">STR &nbsp; &nbsp;Instance name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">ENAME, name of the block insert for the instance, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "BlockReference" "Assembly_1" "Instance_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">ComponentQuantity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">number of occurrences of &nbsp;component in root assembly, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "ComponentQuantity" "Assembly_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Components</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">&lt;none&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">LIST of STR, names of the &nbsp;components stored in the &nbsp;document, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Components")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">STR, description of the component, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Description" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">FilePath</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">STR, file path for external component, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "FilePath" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">HasAssemblyContext</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">&lt;none&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">T, if the document contains root component, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "HasAssemblyContext")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">HasMaterial</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">T, if the component has a material, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "HasMaterial" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Help or ?</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;feature name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">feature's help</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Help")</span><br/><span class="rvts25">(BmLispGet "Help" "Material")</span><br/><span class="rvts25">(BmLispGet "?")</span><br/><span class="rvts25">(BmLispGet "?" "Material")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Instances</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">LIST of STR, names of the instances which belong to given assembly, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Instances" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">IsAssembly</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">T, if given component is assembly, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "IsAssembly" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">IsLocal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">T, if given component is local, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "IsLocal" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">IsRoot</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">T, if given component is root, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "IsRoot" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Material</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Component name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">STR, name of the material assigned to the component, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Material" "Component_1")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">MaterialDensity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Material name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">REAL, density of the material in kg/m^3, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "MaterialDensity" "Steel")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">Materials</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">&lt;none&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">LIST of STR, names of the materials stored in the document, or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "Materials")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">MaterialSpecificHeat</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Material name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">REAL, specific heat of the material in J/(kg*K), or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "MaterialSpecificHeat" "Steel")</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 238px;">
+   <p class="rvps2"><span class="rvts26">MaterialThermalConductivity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 205px;">
+   <p class="rvps2"><span class="rvts25">STR &nbsp; &nbsp;Material name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 348px;">
+   <p class="rvps2"><span class="rvts25">REAL, thermal conductivity of the material in W/(m*K) , or NIL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px; width: 418px;">
+   <p class="rvps2"><span class="rvts25">(BmLispGet "MaterialThermalConductivity" "Steel")</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts26"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

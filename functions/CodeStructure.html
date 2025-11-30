@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Professional Edition 10.1.0.147">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Code Structure</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Performance: Code Structure">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Code Structure">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Code Structure" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="LISP Developer Support Package" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 300px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 300px} body.md-nav-expanded header { padding-left: 314px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>LISP Developer Support Package</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="CodeStructure"
+		  data-hnd-context="290"
+		  data-hnd-title="Code Structure"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="GeneralPerformanceHints.html">General Performance Hints</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GeneralPerformanceHints.html" title="General Performance Hints" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TransactionsDisplayControl.html" title="Transactions + Display Control" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OtherHints.html" title="Other Hints" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Code Structure</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts32">Code Structure</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">When reviewing client Lisp code, we encountered and collected a number of code patterns, which are not only ineffective - but even rather bad in the context of performance and memory usage.</span><br/><span class="rvts25">Such cases are collected here for analysis and documentation - and how to avoid bottlenecks.</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts26">1. local DEFUN blocks :</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps15"><span class="rvts25">(defun mainFunc ( / localFunc )</span><br/><span class="rvts25">&nbsp; &nbsp; ;; some code</span><br/><span class="rvts25">&nbsp; &nbsp; (defun localFunc ()</span><br/><span class="rvts25">&nbsp; &nbsp; &nbsp; &nbsp; ;; some local code</span><br/><span class="rvts25">&nbsp; &nbsp; )&nbsp;</span><br/><span class="rvts25">&nbsp; &nbsp; ;; some code</span><br/><span class="rvts25">)</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts25">If the "mainFunc" function is often called, the local definition of "localFunc" becomes a performance bottleneck.</span><br/><span class="rvts25">Other than with compiled languages, the Lisp interpreter always re-evaluates the local defun block, and re-creates that local function, while the local function does not change at runtime, of course.</span><br/><span class="rvts25"></span><br/><span class="rvts25">It also does not make a difference whether "localFunc" is declared as a local symbol (in "mainFunc") or not - the only difference for a locally declared function is, that the function body is automatically set as NIL when the code flow leaves "mainFunc";</span><br/><span class="rvts25">otherwise, when not declared locally, the "localFunc" function becomes a global one (at global scope) and is redefined as global function when "mainFunc" is re-entered again.</span><br/><span class="rvts25"></span><br/><span class="rvts25">So in any case, the repeated evaluation of (defun localFunc ...) code block creates unnecessary performance overhead, and additionally fills the Lisp memory, triggering more GarbageCollections.</span><br/><span class="rvts25"></span><br/><span class="rvts26">Suggestion :</span><br/><span class="rvts25">even as possible from technical point, it does not make real sense - except, when several main functions all declare + use a same-named local function. Therefore, it is best to avoid such code designs for better performance and less memory load.</span><br/><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts26">2. (while) loop iterating over a list :</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps15"><span class="rvts25">(while (setq item (car lst))</span><br/><span class="rvts25">&nbsp; &nbsp; (setq lst (cdr lst))</span><br/><span class="rvts25">&nbsp; &nbsp; ;; some code</span><br/><span class="rvts25">)</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts26">better approach :</span></p>
+<p class="rvps15"><span class="rvts25">(foreach item lst</span><br/><span class="rvts25">&nbsp; &nbsp; ;; some code</span><br/><span class="rvts25">)</span></p>
+<p class="rvps2"><span class="rvts25"></span><br/><span class="rvts26">The (foreach) loop saves 4 operations :</span><br/><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">(setq item (car lst)) - 2 operations : (car) and (setq)</span><br/><span class="rvts25"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts25">(setq lst (cdr lst)) &nbsp; &nbsp;- 2 operations : (cdr) and (setq)</span><br/><span class="rvts25">so it reduces execution time by 4 operations for each loop cycle, and many temporary Lisp objects, as "item" and "lst" variables are reassigned new values with each cycle;</span><br/><span class="rvts25">such temporary objects fill the Lisp memory and trigger earlier GarbageCollections, which in turn also reduce the overall performance.</span><br/><span class="rvts25"><br/></span></p>
+<p class="rvps2" style="break-before: always;"><span class="rvts25"></span><span class="rvts24"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2017-2025, Bricsys NV</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 300px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+
